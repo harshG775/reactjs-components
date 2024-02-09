@@ -7,17 +7,19 @@ function Crumb(props: any) {
     const {crumb, index, crumbs} = props
     if (crumbs.length-1!==index ) {
         return (
-            <li className="capitalize flex items-center text-xs text-gray-400 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:focus:text-blue-500">
-                <Link href={crumb.link}>
-                    {crumb.label}
-                </Link>
-                {/* <Icon className="text-lg" icon={"iconamoon:arrow-right-2-light"}/> */}
-            </li>
+            <>
+                <li className="capitalize flex items-center text-xs text-gray-400 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:focus:text-blue-500">
+                    <Link href={crumb.link}>
+                        {crumb.label}
+                    </Link>
+                </li>
+                /{/* <Icon className="text-lg" icon={"iconamoon:arrow-right-2-light"}/> */}
+            </>
         )
     }
     return (
         <li className="capitalize inline-flex items-center text-xs font-semibold text-gray-800 truncate dark:text-gray-200">
-            /{crumb.label}
+            {crumb.label}
         </li>
     )
 }
