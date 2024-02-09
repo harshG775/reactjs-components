@@ -1,5 +1,10 @@
 "use client";
-export default function Dialog({ children, isOpen, setIsOpen }: any) {
+type Props = {
+    children: React.ReactNode;
+    isOpen: boolean;
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export default function Dialog({ children, isOpen, setIsOpen }: Props) {
 	const handleToggle = () => setIsOpen((prev: boolean) => !prev);
 	return (
 		<>
