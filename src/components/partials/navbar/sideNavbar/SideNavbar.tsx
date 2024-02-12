@@ -34,14 +34,17 @@ const sideBarLinks = [
         ]
     },
 ]
-export default function SideNavbar() {
+export default function SideNavbar({className,setIsSidebarOpen}:any) {
     return (
-        <header className="bg-neutral-900">
-            <ul className="sticky top-0 p-2">
-                {sideBarLinks.map((linkData) => (
-                    <SidebarItem linkData={linkData} key={linkData.title}/>
-                ))}
-            </ul>
+        <header className={`bg-neutral-900 ${className}`}>
+            <div onClick={()=>setIsSidebarOpen(false)}>toggle</div>
+            <nav>
+                <ul className="sticky top-0 p-2">
+                    {sideBarLinks.map((linkData) => (
+                        <SidebarItem linkData={linkData} key={linkData.title}/>
+                    ))}
+                </ul>
+            </nav>
         </header>
     );
 }
