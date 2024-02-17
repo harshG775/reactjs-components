@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link";
 function SidebarSubItem({linkData}:any) {
-    console.log(linkData)
     return (
         <li>
             <Link href={linkData.href}>{linkData.title}</Link>
@@ -9,7 +8,6 @@ function SidebarSubItem({linkData}:any) {
     );
 }
 export default function SidebarItem({linkData}:any) {
-    console.log(linkData)
     if (linkData.haveSubMenu) {
         return (
             <li>
