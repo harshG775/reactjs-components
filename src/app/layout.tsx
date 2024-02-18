@@ -3,6 +3,7 @@
 import { Inter } from "next/font/google";
 import Breadcrumb from "@/components/breadcrumb/Breadcrumb";
 import "./globals.css";
+import "./prismjs.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
