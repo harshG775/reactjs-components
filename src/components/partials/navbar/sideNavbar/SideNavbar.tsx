@@ -37,7 +37,7 @@ const sideBarLinks = [
 export default function SideNavbar({className,setIsSidebarOpen}:any) {
     return (
         <header className={`bg-neutral-900 ${className}`}>
-            <div onClick={()=>setIsSidebarOpen(false)}>toggle</div>
+            <div className="md:hidden block" onClick={()=>setIsSidebarOpen((pre:boolean)=>!pre)}>toggle</div>
             <nav>
                 <ul className="sticky top-0 p-2">
                     {sideBarLinks.map((linkData) => (
