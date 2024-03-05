@@ -17,7 +17,6 @@ import SideNavbar from "@/components/partials/navbar/sideNavbar/SideNavbar";
 import { useState } from "react";
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
     const [isSidebarOpen,setIsSidebarOpen] = useState(false)
-    console.log(isSidebarOpen)
 	return (
 		<html lang="en">
 			<body className={inter.className}>
