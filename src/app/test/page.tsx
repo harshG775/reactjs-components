@@ -1,7 +1,9 @@
 import Button from "@/components/ui/Button";
-import React from "react"
+import Breadcrumb from "@/components/ui/breadcrumb/Breadcrumb";
 export default function page() {
     return (
+        <>
+        
         <div className="p-4 flex gap-4">
             <Button variant="primary">
                 Sign up
@@ -19,5 +21,7 @@ export default function page() {
                 warning
             </Button>
         </div>
+        <Breadcrumb />
+        </>
     );
 }
