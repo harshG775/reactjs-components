@@ -17,12 +17,12 @@ export default function Drawer(props: SideBarProps) {
     } = props;
     const direction = {
         left: `
-        ${isDrawerOpen ? "-translate-x-0" : "translate-x-full"}
-        top-0 right-0 bottom-0 left-auto
-    `,
-        right: `
         ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}
         top-0 right-auto bottom-0 left-0
+    `,
+        right: `
+        ${isDrawerOpen ? "-translate-x-0" : "translate-x-full"}
+        top-0 right-0 bottom-0 left-auto
     `,
         top: `
         ${isDrawerOpen ? "translate-y-0" : "-translate-y-full"}
