@@ -9,7 +9,7 @@ function DropDownCrumb({pathObject}:any) {
         <li className="relative">
             <button className="px-4" onClick={() => setOpen(!open)}>:</button>
             <ul className="absolute top-full left-0 grid grid-cols-1 p-2">
-                {open && pathObject.map((crumb, i) => {
+                {open && pathObject.map((crumb:any, i:number) => {
                         if (i !== 0 && i !< pathObject.length - 2) {
                             return (
                                 <Link key={i} href={crumb.link}>{crumb.label}</Link>
