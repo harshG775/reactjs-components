@@ -52,7 +52,7 @@ export default function Drawer(props: SideBarProps) {
 
     return (
         <>
-            <aside
+            <div
                 className={`
                 ${cn(
                     "z-50 fixed transition bg-neutral-900 text-neutral-50",
@@ -62,7 +62,7 @@ export default function Drawer(props: SideBarProps) {
             `}
             >
                 {children}
-            </aside>
+            </div>
             {isDrawerOpen?
             <div  className={` fixed inset-0 bg-neutral-950/50 z-40`} onClick={() => setIsDrawerOpen(false)}></div>
             :""}
