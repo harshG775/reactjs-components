@@ -17,7 +17,7 @@ export default function Page() {
                 isDrawerOpen={isDrawerOpen}
                 setIsDrawerOpen={setIsDrawerOpen}
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -37,7 +37,7 @@ export default function Page() {
                 isDrawerOpen={isDrawerOpenRight}
                 setIsDrawerOpen={setIsDrawerOpenRight}
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -57,7 +57,7 @@ export default function Page() {
                 isDrawerOpen={isDrawerOpenTop}
                 setIsDrawerOpen={setIsDrawerOpenTop}
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -77,7 +77,7 @@ export default function Page() {
                 isDrawerOpen={isDrawerOpenBottom}
                 setIsDrawerOpen={setIsDrawerOpenBottom}
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -95,8 +95,9 @@ export default function Page() {
                 from="bottomLeft"
                 isDrawerOpen={isDrawerOpenBottomLeft}
                 setIsDrawerOpen={setIsDrawerOpenBottomLeft}
+                className=" p-4 rounded-tr-2xl"
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -114,8 +115,9 @@ export default function Page() {
                 from="bottomRight"
                 isDrawerOpen={isDrawerOpenBottomRight}
                 setIsDrawerOpen={setIsDrawerOpenBottomRight}
+                className=" p-4 rounded-tl-2xl"
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -133,8 +135,9 @@ export default function Page() {
                 from="topLeft"
                 isDrawerOpen={isDrawerOpenTopLeft}
                 setIsDrawerOpen={setIsDrawerOpenTopLeft}
+                className=" p-4 rounded-br-2xl"
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -152,8 +155,9 @@ export default function Page() {
                 from="topRight"
                 isDrawerOpen={isDrawerOpenTopRight}
                 setIsDrawerOpen={setIsDrawerOpenTopRight}
+                className=" p-4 rounded-bl-2xl"
             >
-                <ul className=" min-w-60">
+                <ul className=" min-w-60 min-h-60">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
