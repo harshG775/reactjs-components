@@ -5,7 +5,7 @@ type SideBarProps = {
     isDrawerOpen: boolean;
     setIsDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>;
     className?: string;
-    from: "left" | "right" | "top" | "bottom";
+    from: "left" | "right" | "top" | "bottom"| "bottomLeft" | "bottomRight" | "topLeft" | "topRight";
 };
 export default function Drawer(props: SideBarProps) {
     const {
@@ -31,6 +31,22 @@ export default function Drawer(props: SideBarProps) {
         bottom: `
         ${isDrawerOpen ? "translate-y-0" : "translate-y-full"}
         top-auto right-0 bottom-0 left-0
+    `,
+        bottomLeft: `
+        ${isDrawerOpen ? "translate-y-0 translate-x-0" : "translate-y-full -translate-x-full"}
+        top-auto bottom-0 left-0  right-auto
+    `,
+    bottomRight: `
+        ${isDrawerOpen ? "translate-y-0 translate-x-0" : "translate-y-full translate-x-full"}
+        top-auto bottom-0 left-auto  right-0
+    `,
+    topLeft: `
+        ${isDrawerOpen ? "translate-y-0 translate-x-0" : "-translate-y-full -translate-x-full"}
+        top-0 bottom-auto left-0  right-auto
+    `,
+    topRight: `
+        ${isDrawerOpen ? "translate-y-0 translate-x-0" : "-translate-y-full translate-x-full"}
+        top-0 bottom-auto left-auto  right-0
     `,
     };
 

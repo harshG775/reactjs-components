@@ -6,6 +6,10 @@ export default function Page() {
     const [isDrawerOpenRight, setIsDrawerOpenRight] = useState(false);
     const [isDrawerOpenTop, setIsDrawerOpenTop] = useState(false);
     const [isDrawerOpenBottom, setIsDrawerOpenBottom] = useState(false);
+    const [isDrawerOpenBottomLeft, setIsDrawerOpenBottomLeft] = useState(false);
+    const [isDrawerOpenBottomRight, setIsDrawerOpenBottomRight] = useState(false);
+    const [isDrawerOpenTopLeft, setIsDrawerOpenTopLeft] = useState(false);
+    const [isDrawerOpenTopRight, setIsDrawerOpenTopRight] = useState(false);
     return (
         <main className="p-4 grid place-content-center gap-2">
             <Drawer
@@ -86,6 +90,82 @@ export default function Page() {
                 onClick={() => setIsDrawerOpenBottom(true)}
             >
                 Bottom
+            </button>
+            <Drawer
+                from="bottomLeft"
+                isDrawerOpen={isDrawerOpenBottomLeft}
+                setIsDrawerOpen={setIsDrawerOpenBottomLeft}
+            >
+                <ul className=" min-w-60">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </Drawer>
+            <button
+                className=" rounded-lg px-6 py-2 bg-blue-500 text-white"
+                onClick={() => setIsDrawerOpenBottomLeft(true)}
+            >
+                BottomLeft
+            </button>
+            <Drawer
+                from="bottomRight"
+                isDrawerOpen={isDrawerOpenBottomRight}
+                setIsDrawerOpen={setIsDrawerOpenBottomRight}
+            >
+                <ul className=" min-w-60">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </Drawer>
+            <button
+                className=" rounded-lg px-6 py-2 bg-blue-500 text-white"
+                onClick={() => setIsDrawerOpenBottomRight(true)}
+            >
+                BottomRight
+            </button>
+            <Drawer
+                from="topLeft"
+                isDrawerOpen={isDrawerOpenTopLeft}
+                setIsDrawerOpen={setIsDrawerOpenTopLeft}
+            >
+                <ul className=" min-w-60">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </Drawer>
+            <button
+                className=" rounded-lg px-6 py-2 bg-blue-500 text-white"
+                onClick={() => setIsDrawerOpenTopLeft(true)}
+            >
+                TopLeft
+            </button>
+            <Drawer
+                from="topRight"
+                isDrawerOpen={isDrawerOpenTopRight}
+                setIsDrawerOpen={setIsDrawerOpenTopRight}
+            >
+                <ul className=" min-w-60">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </Drawer>
+            <button
+                className=" rounded-lg px-6 py-2 bg-blue-500 text-white"
+                onClick={() => setIsDrawerOpenTopRight(true)}
+            >
+                TopRight
             </button>
         </main>
     );
