@@ -10,7 +10,7 @@ export default function Home() {
                 your apps. Accessible. Customizable. Open Source.
             </p>
             <div>
-                <Link href={"/components"}>
+                <Link href={"/components/accordion"}>
                     <Button className="bg-rose-600 transition-colors duration-100">
                         Get Started
                     </Button>

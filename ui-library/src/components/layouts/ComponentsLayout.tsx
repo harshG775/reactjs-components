@@ -13,12 +13,28 @@ export default function ComponentsLayout({ children }: PropsWithChildren) {
                 href: "/components/accordion",
             },
             {
+                name: "Breadcrumb",
+                href: "/components/breadcrumb",
+            },
+            {
                 name: "Button",
                 href: "/components/button",
             },
             {
                 name: "Drawer",
                 href: "/components/drawer",
+            },
+            {
+                name: "Dialog",
+                href: "/components/dialog",
+            },
+            {
+                name: "Steps",
+                href: "/components/steps",
+            },
+            {
+                name: "Tabs",
+                href: "/components/tabs",
             },
         ],
     };

@@ -23,7 +23,7 @@ function Crumb(props: any) {
         </li>
     )
 }
-export default function Breadcrumb() {
+export default function Breadcrumb_1() {
         const pathname = usePathname();
 
         const pathnames = pathname.split('/').filter(Boolean); // remove empty strings

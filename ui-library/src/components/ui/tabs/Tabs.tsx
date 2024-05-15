@@ -39,7 +39,7 @@ export default function Tabs() {
         },
     ];
     return (
-        <div className={`bg-neutral-50 p-0.5 sm:p-2 grid gap-2 grid-cols-[repeat(auto-fill,minmax(80px,1fr))]`}>
+        <div className={`bg-neutral-50 p-0.5 sm:p-2 py-8 grid gap-2 grid-cols-[repeat(auto-fill,minmax(80px,1fr))]`}>
             {tabData.map((tab) => (
                 <Tab
                     key={tab.id}

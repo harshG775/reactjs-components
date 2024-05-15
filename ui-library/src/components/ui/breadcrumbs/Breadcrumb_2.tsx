@@ -21,7 +21,7 @@ function DropDownCrumb({pathObject}:any) {
     )
 }
 
-export default function Breadcrumb() {
+export default function Breadcrumb_2() {
     // const paths = usePathname();
     const paths = "home/dashboard/components/docs/breadcrumb/example";
     // const paths = "home/dashboard/components/docs";
