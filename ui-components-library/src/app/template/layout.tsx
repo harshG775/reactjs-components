@@ -1,4 +1,4 @@
-import TopNavbar from "@/components/template/ecommerce/partials/multiMenuNavbar/TopNavbar";
+import TopNavbar from "@/components/template/ecommerce/partials/multiMenuNavbar/topNavbar/TopNavbar";
 
 export default function templatesLayout({
     children,
