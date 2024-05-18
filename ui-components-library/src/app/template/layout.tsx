@@ -1,4 +1,5 @@
 "use client"
+import Icon from "@/components/icons/lucide";
 import NavBarBanner from "@/components/template/ecommerce/partials/multiMenuNavbar/NavBarBanner/NavBarBanner";
 import TopNavbar from "@/components/template/ecommerce/partials/multiMenuNavbar/topNavbar/TopNavbar";
 import { useEffect, useState } from "react";
@@ -8,15 +9,17 @@ export default function TemplatesLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const [darkMode, setDarkMode] = useState(false);
+    const [theme, setTheme] = useState(false);
     useEffect(() => {
         // <html lang="en" data-theme="light">
-        document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme ? "dark" : "light");
     })
 
     return (
         <>
-            <button className="fixed bottom-4 right-4" onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
+            <button className="fixed bottom-4 right-4" onClick={() => setTheme(!theme)}>
+                <Icon name="SunMoon" className="w-8 h-8 p-2 shadow-sm hover:shadow-md rounded-full shadow-primary items-center bg-primary hover:text-primary hover:bg-white transition-all duration-300" />
+            </button>
             <NavBarBanner
                 contactInfo={{
                     email: "user123@example.com",
