@@ -1,7 +1,9 @@
+import Hero from "@/components/template/ecommerce/main/hero/Hero"
+
 export default function page() {
     return (
         <main>
-            <section>Hero</section>
+            <Hero/>
             <section>Flash Sale</section>
             <section>Browse By Category</section>
             <section>Best selling Products</section>

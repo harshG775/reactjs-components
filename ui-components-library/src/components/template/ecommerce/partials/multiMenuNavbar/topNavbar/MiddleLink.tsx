@@ -39,7 +39,7 @@ export default function MiddleLinks({
                                     className="relative overflow-hidden group h-10 flex justify-center flex-row items-center hover:text-primary font-medium"
                                 >
                                     {link.title}
-                                    <span className="bg-primary absolute bottom-0 w-full h-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                                    <span className="bg-primary absolute bottom-0 w-full h-0.5 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
                                 </Link>
                             </li>
                         )
@@ -91,7 +91,7 @@ export default function MiddleLinks({
                                     className="w-full relative overflow-hidden group h-10 flex justify-center flex-row items-center hover:text-primary font-medium"
                                 >
                                     {link.title}
-                                    <span className="bg-primary absolute bottom-0 w-full h-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                                    <span className="bg-primary absolute bottom-0 w-full h-0.5 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
                                 </Link>
                             </li>
                         )
