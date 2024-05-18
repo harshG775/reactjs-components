@@ -15,7 +15,7 @@ type MiddleLinksPropsType = {
         title: string;
         src?: string;
         href: string;
-    }
+    };
 };
 export default function MiddleLinks({
     middleLinksData,
@@ -84,10 +84,9 @@ export default function MiddleLinks({
                 <ul className={`flex flex-col justify-center `}>
                     {middleLinksData.map(
                         (link: { title: string; href: string }) => (
-                            <li>
+                            <li key={link.title}>
                                 <Link
                                     href={link.href}
-                                    key={link.title}
                                     className="w-full relative overflow-hidden group h-10 flex justify-center flex-row items-center hover:text-primary font-medium"
                                 >
                                     {link.title}

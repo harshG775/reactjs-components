@@ -3,7 +3,7 @@ import { useState } from "react";
 // import DrawerTest from "./Drawer";
 import Button from "@/components/ui/buttons/Button";
 
-export default function page() {
+export default function TestPage() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     return (
         <>

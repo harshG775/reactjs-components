@@ -76,7 +76,7 @@ export default function Accordion_() {
                 setActive={setActive}
             >
                 Yes. It comes with default styles that matches the other
-                components' aesthetic.
+                components&apos; aesthetic.
             </AccordionItem>
             <AccordionItem
                 title="title 3"
@@ -84,7 +84,7 @@ export default function Accordion_() {
                 active={active}
                 setActive={setActive}
             >
-                Yes. It's animated by default, but you can disable it if you
+                Yes. It&apos;s animated by default, but you can disable it if you
                 prefer.
             </AccordionItem>
         </Accordion>

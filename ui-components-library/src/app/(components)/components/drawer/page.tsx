@@ -3,7 +3,7 @@ import Drawer from "@/components/ui/Drawer/Drawer";
 import Button from "@/components/ui/buttons/Button";
 import { useState } from "react";
 
-export default function page() {
+export default function DrawerPage() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const [isDrawerOpenRight, setIsDrawerOpenRight] = useState(false);
     const [isDrawerOpenTop, setIsDrawerOpenTop] = useState(false);
