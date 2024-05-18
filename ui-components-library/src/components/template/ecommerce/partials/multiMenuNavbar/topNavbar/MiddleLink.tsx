@@ -33,10 +33,9 @@ export default function MiddleLinks({
                 <ul className={`flex justify-center items-center gap-2 `}>
                     {middleLinksData.map(
                         (link: { title: string; href: string }) => (
-                            <li>
+                            <li key={link.title}>
                                 <Link
                                     href={link.href}
-                                    key={link.title}
                                     className="relative overflow-hidden group h-10 flex justify-center flex-row items-center hover:text-primary font-medium"
                                 >
                                     {link.title}

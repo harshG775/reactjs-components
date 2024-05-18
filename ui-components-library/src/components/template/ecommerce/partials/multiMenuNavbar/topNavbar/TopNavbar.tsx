@@ -3,6 +3,7 @@ import { useState } from "react";
 import LeftLinks from "./LeftLinks";
 import MiddleLinks from "./MiddleLink";
 import RightLinks from "./RightLinks";
+import { cn } from "@/utils/cn";
 
 const TopNavbarData = {
     logoData: {
@@ -61,12 +62,15 @@ const TopNavbarData = {
     ],
 };
 
-export default function TopNavbar() {
+type TopNavbarPropsTypes = {
+        className?: string;
+}
+export default function TopNavbar({className}: TopNavbarPropsTypes) {
     const {logoData, leftLinksData, middleLinksData, rightLinks } = TopNavbarData;
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="max-w-8xl mx-auto w-full h-14 flex items-center justify-between gap-2 p-2 bg-background border-b-2 border-b-primary/20">
+        <header className={cn("max-w-8xl mx-auto w-full h-14 flex items-center justify-between gap-2 p-2 bg-background border-b-2 border-b-primary/20", className)}>
             <LeftLinks
                 leftLinksData={leftLinksData}
                 setOpen={setOpen}
