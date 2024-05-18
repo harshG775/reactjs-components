@@ -41,12 +41,12 @@ export default function ComponentsLayout({ children }: PropsWithChildren) {
     const closeDrawer = sidebarState((state) => state.close);
     return (
         <div className="grid lg:grid-cols-[auto_1fr]">
-            <SideBarDrawer className=" bg-neutral-900">
+            <SideBarDrawer className=" bg-background">
                 <ul>
                     {linksData.components.map((linkData) => (
                         <li key={linkData.name} onClick={()=>closeDrawer()}>
                             <Link href={linkData.href}
-                                className="py-2 px-6 block text-sm font-semibold hover:bg-neutral-800"
+                                className="py-2 px-6 block text-sm font-semibold hover:bg-background/80"
                             >{linkData.name}</Link>
                         </li>
                     ))}
