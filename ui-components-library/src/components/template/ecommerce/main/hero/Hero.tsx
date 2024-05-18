@@ -5,15 +5,15 @@ export default function Hero() {
     const Title = "Managerial Optimization for your Companies";
     const Description = "Get full control of your company's performance with our powerful tools.";
     return (
-        <section className="bg-white">
+        <section className="bg-background">
             <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8
                 grid lg:grid-cols-2 gap-4 
             ">
                     <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none ">
-                        <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
+                        <h1 className="text-4xl font-extrabold tracking-tight text-text">
                             {Title}
                         </h1>
-                        <p className="mt-6 text-xl text-gray-500">
+                        <p className="mt-6 text-xl text-text/80">
                             {Description}
                         </p>
                         <div className="pt-8">
