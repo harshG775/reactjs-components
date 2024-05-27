@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
     return (
         <main className="grid place-content-center gap-4 h-screen text-center">
@@ -5,6 +7,13 @@ export default function Home() {
             <p className=" text-2xl max-w-96 text-foreground/50">
                 NextJs template with theme <br /> pre-Installed packages
             </p>
+            <div>
+                get new theme from <Link 
+                    href="https://ui.shadcn.com/themes"
+                    target="_blank"
+                    className="hover:underline text-primary font-medium">Shadcn/theme
+                    </Link>
+            </div>
         </main>
     );
 }
