@@ -20,6 +20,22 @@ export default function page() {
                             </div>
                         ),
                     },
+                    {
+                        title: "Tab Two",
+                        render: (
+                            <div>
+                                <h1 className="text-3xl">Tab 2</h1>
+                            </div>
+                        ),
+                    },
+                    {
+                        title: "Tab Two",
+                        render: (
+                            <div>
+                                <h1 className="text-3xl">Tab 2</h1>
+                            </div>
+                        ),
+                    },
                 ]}
             />
         </main>

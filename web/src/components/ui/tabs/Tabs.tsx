@@ -20,14 +20,16 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
         </li>
     );
 }
+type MaxFourArray<T> = 
+  [] | [T] | [T, T] | [T, T, T] | [T, T, T, T];
 type TabPropsType = {
-    tabData: { title: string; render: JSX.Element }[];
+    tabData: MaxFourArray<{ title: string; render: JSX.Element }>;
 };
 export default function Tabs({ tabData }: TabPropsType) {
     const [activeTab, setActiveTab] = useState(0);
     return (
         <>
-            <ul className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid sm:gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
+            <ul className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
                 {tabData.map((tab: { title: string }, i: number) => (
                     <Tab
                         key={i}
