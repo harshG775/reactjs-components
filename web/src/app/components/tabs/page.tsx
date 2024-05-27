@@ -5,18 +5,16 @@ export default function page() {
             <Tabs
                 tabData={[
                     {
-                        title: "Tab 1",
-                        id: "tab-1",
-                        content: (
+                        title: "Tab One",
+                        render: (
                             <div>
                                 <h1 className="text-3xl">Tab 1</h1>
                             </div>
                         ),
                     },
                     {
-                        title: "Tab 2",
-                        id: "tab-2",
-                        content: (
+                        title: "Tab Two",
+                        render: (
                             <div>
                                 <h1 className="text-3xl">Tab 2</h1>
                             </div>

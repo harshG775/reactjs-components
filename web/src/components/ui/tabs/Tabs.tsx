@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Tab({ tab, activeTab, setActiveTab }: any) {
     const { title, id } = tab;
@@ -21,21 +21,20 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
     );
 }
 export default function Tabs({ tabData }: any) {
-    const [activeTab, setActiveTab] = useState(tabData[0].id);
-    const Render =tabData.find((tab: { id: number }) => tab.id === activeTab)?.content
+    const [activeTab, setActiveTab] = useState(0);
     return (
         <>
             <ul className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid sm:gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
-                {tabData.map((tab: { title: string; id: number }) => (
+                {tabData.map((tab: { title: string }, i: number) => (
                     <Tab
-                        key={tab.id}
-                        tab={tab}
+                        key={i}
+                        tab={{ id: i, ...tab }}
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
                     />
                 ))}
             </ul>
-            {Render}
+            {tabData[activeTab].render}
         </>
     );
 }
