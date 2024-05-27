@@ -10,7 +10,7 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
                     activeTab === id
                         ? "bg-primary text-primary-foreground"
                         : " text-primary hover:bg-muted focus-visible:bg-muted"
-                } focus-outline w-full pb-1 pt-2 h-6 sm:h-8 sm:text-sm text-xs rounded-md cursor-pointer font-medium uppercase flex items-center justify-center
+                } focus-outline w-full pb-1 pt-2 h-6 sm:h-8 sm:text-sm text-xs rounded-sm sm:rounded-md cursor-pointer font-medium uppercase flex items-center justify-center
             
             `}
                 onClick={() => setActiveTab(id)}
