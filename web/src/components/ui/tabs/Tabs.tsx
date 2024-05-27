@@ -20,7 +20,10 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
         </li>
     );
 }
-export default function Tabs({ tabData }: any) {
+type TabPropsType = {
+    tabData: { title: string; render: JSX.Element }[];
+};
+export default function Tabs({ tabData }: TabPropsType) {
     const [activeTab, setActiveTab] = useState(0);
     return (
         <>
