@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 function Tab({ tab, activeTab, setActiveTab }: any) {
-    const { name, id } = tab;
+    const { title, id } = tab;
     return (
         <li>
             <button
@@ -15,29 +15,27 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
             `}
                 onClick={() => setActiveTab(id)}
             >
-                {name}
+                {title}
             </button>
         </li>
     );
 }
-export default function Tabs({ tabData, render }: any) {
-    const [activeTab, setActiveTab] = useState(0);
-
+export default function Tabs({ tabData }: any) {
+    const [activeTab, setActiveTab] = useState(tabData[0].id);
+    const Render =tabData.find((tab: { id: number }) => tab.id === activeTab)?.content
     return (
         <>
-            <ul
-                className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid sm:gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]"
-            >
-                {tabData.map((tab: string, i: number) => (
+            <ul className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid sm:gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
+                {tabData.map((tab: { title: string; id: number }) => (
                     <Tab
-                        key={i}
-                        tab={{ name: tab, id: i }}
+                        key={tab.id}
+                        tab={tab}
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
                     />
                 ))}
             </ul>
-            {render({ currentTab: tabData[activeTab] })}
+            {Render}
         </>
     );
 }
