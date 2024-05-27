@@ -10,7 +10,7 @@ export default function ThemeHandler({
     const [cTheme, setCTheme] = useState(currentTheme);
 
     const handleTheme = () => {
-        document.documentElement.setAttribute("class", cTheme === "light" ? "color-scheme-dark" : "color-scheme-light");
+        document.documentElement.setAttribute("color-scheme", cTheme === "light" ? "dark" : "light");
         if (cTheme === "light") {
             document.body.classList.add("dark");
             setCookie("theme", "dark", {

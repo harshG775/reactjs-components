@@ -14,11 +14,11 @@ export default function Layout({ children, ...rest }: RootLayoutProps) {
     const { get } = cookies();
     const theme = get("theme");
     return (
-        <html lang="en">
+        <html lang="en" color-scheme={theme?.value || "light"}>
             <body
                 {...rest}
                 className={cn(
-                    `min-h-screen bg-background font-sans antialiased ${theme?.value || ""}`,
+                    `min-h-screen bg-background font-sans antialiased ${theme?.value || "light"}`,
                     className
                 )}
             >
