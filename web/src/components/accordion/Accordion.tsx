@@ -50,7 +50,7 @@ export function AccordionItem({
             transition-[grid-template-rows] duration-200 ease-out border-b border-b-neutral-50/20
         `}
             >
-                <div className=" overflow-hidden mb-2">{children}</div>
+                <div className=" overflow-hidden">{children}</div>
             </div>
         </li>
     );
