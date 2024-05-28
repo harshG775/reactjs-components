@@ -2,6 +2,7 @@ import TanstackQuery from "@/lib/TanstackQuery";
 import { cn } from "@/lib/utils";
 import React from "react";
 import ThemeHandler from "../ui/ThemeHandler";
+import SideBar from "../partials/sidebar/SideBar";
 
 type RootLayoutProps = {
     children: React.ReactNode;
@@ -20,7 +21,9 @@ export default function Layout({ theme, children, ...rest }: RootLayoutProps) {
                 )}
             >
                 <TanstackQuery>
-                    {children}
+                    <SideBar>
+                        {children}
+                    </SideBar>
                     <ThemeHandler currentTheme={theme} />
                 </TanstackQuery>
             </body>
