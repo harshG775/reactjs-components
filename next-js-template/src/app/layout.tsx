@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layouts/RootLayout";
+import { cookies } from "next/headers";
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -13,7 +14,13 @@ export const metadata: Metadata = {
     description: "with TailwindCSS and ShadeCn theme",
 };
 
-type RootLayoutProps = Readonly<{children: React.ReactNode;}>;
+type RootLayoutProps = Readonly<{ children: React.ReactNode }>;
 export default function RootLayout({ children }: RootLayoutProps) {
-    return <Layout className={fontSans.variable}>{children}</Layout>;
+    const { get } = cookies();
+    const theme = get("theme");
+    return (
+        <Layout className={fontSans.variable} theme={theme?.value || "light"}>
+            {children}
+        </Layout>
+    );
 }
