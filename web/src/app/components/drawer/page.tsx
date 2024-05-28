@@ -31,11 +31,11 @@ export default function DrawerPage() {
                     setIsDrawerOpen={setIsDrawerOpen}
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpen(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpen(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpen(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpen(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpen(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button variant="primary" onClick={() => setIsDrawerOpen(true)}>
@@ -48,11 +48,11 @@ export default function DrawerPage() {
                     setIsDrawerOpen={setIsDrawerOpenRight}
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenRight(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenRight(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenRight(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenRight(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenRight(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -68,11 +68,11 @@ export default function DrawerPage() {
                     setIsDrawerOpen={setIsDrawerOpenTop}
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTop(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTop(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTop(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTop(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTop(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -88,11 +88,11 @@ export default function DrawerPage() {
                     setIsDrawerOpen={setIsDrawerOpenBottom}
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottom(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottom(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottom(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottom(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottom(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -108,11 +108,11 @@ export default function DrawerPage() {
                     className=" p-4 rounded-br-2xl"
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopLeft(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopLeft(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopLeft(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopLeft(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopLeft(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -128,11 +128,11 @@ export default function DrawerPage() {
                     className=" p-4 rounded-bl-2xl"
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopRight(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopRight(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopRight(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopRight(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenTopRight(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -148,11 +148,11 @@ export default function DrawerPage() {
                     className=" p-4 rounded-tr-2xl"
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomLeft(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomLeft(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomLeft(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomLeft(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomLeft(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
@@ -168,11 +168,11 @@ export default function DrawerPage() {
                     className=" p-4 rounded-tl-2xl"
                 >
                     <ul className=" min-w-60 min-h-60">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomRight(false)}>1</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomRight(false)}>2</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomRight(false)}>3</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomRight(false)}>4</li>
+                        <li className="border-b-2 border-primary/20 hover:bg-muted p-2" onClick={()=>setIsDrawerOpenBottomRight(false)}>5</li>
                     </ul>
                 </Drawer>
                 <Button
