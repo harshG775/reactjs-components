@@ -69,9 +69,9 @@ export default function Drawer(rest: SideBarProps) {
             >
                 {children}
             </div>
-            {isDrawerOpen?
-            <div  className={` fixed inset-0 bg-neutral-950/50 z-40`} onClick={() => setIsDrawerOpen(false)}></div>
-            :""}
+            {/* {isDrawerOpen? */}
+            <div  className={`${isDrawerOpen ? "bg-neutral-950/80 " : "collapse"} transition-colors duration-200 ease-out fixed inset-0  z-40`} onClick={() => setIsDrawerOpen(false)}></div>
+            {/* :""} */}
         </>
     );
 }

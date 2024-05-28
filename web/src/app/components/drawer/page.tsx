@@ -20,11 +20,11 @@ export default function DrawerPage() {
                 <h2 className="py-4 font-bold text-4xl text-rose-600">
                     Drawer
                 </h2>
-                <p className="max-w-96 text-xl text-neutral-50/50 text-balance">
+                <p className="max-w-96 text-xl text-balance">
                     A drawer component for React.
                 </p>
             </div>
-            <div className=" border border-neutral-50/50 rounded-md p-12 grid gap-4 sm:grid-cols-2 place-content-center max-h-96 max-w-96 mx-auto overflow-y-auto">
+            <div className=" border rounded-md p-12 grid gap-4 sm:grid-cols-2 place-content-center max-h-96 max-w-96 mx-auto overflow-y-auto">
                 <Drawer
                     from="left"
                     isDrawerOpen={isDrawerOpen}
