@@ -8,7 +8,9 @@ import React, {
     useCallback,
 } from "react";
 
-/* Dialog */
+/*
+Dialog
+**/
 type DialogContextType = {
     toggleDialog: () => void;
     dialogRef: React.RefObject<HTMLDialogElement>;
@@ -36,8 +38,9 @@ export function useDialogContext() {
     return useContext(DialogContext);
 }
 
-/* DialogTrigger */
-
+/* 
+DialogTrigger
+**/
 type DialogTriggerPropsType = HtmlHTMLAttributes<HTMLButtonElement> & {
     children: ReactNode;
 };
@@ -53,7 +56,9 @@ export function DialogTrigger({ children, ...rest }: DialogTriggerPropsType) {
     );
 }
 
-/* DialogContent */
+/* 
+DialogContent
+**/
 type DialogContentPropsType = HtmlHTMLAttributes<HTMLDialogElement> & {
     children: ReactNode;
 };
