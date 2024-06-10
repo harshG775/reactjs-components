@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -7,7 +8,9 @@ export default function NotFound() {
             <p className=" text-xl max-w-96 text-foreground/50">
                 Could not find requested resource
             </p>
-            <Link href="/">Return Home</Link>
+            <Button asChild>
+                <Link href="/">Return Home</Link>
+            </Button>
         </main>
     );
 }
