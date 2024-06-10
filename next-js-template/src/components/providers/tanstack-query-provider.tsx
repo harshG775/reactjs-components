@@ -4,7 +4,7 @@ import { PropsWithChildren } from "react";
 const queryClient = new QueryClient();
 
 type TQueryProps = PropsWithChildren<{}>;
-export default function TanstackQuery({ children }: TQueryProps) {
+export default function TanstackQueryProvider({ children }: TQueryProps) {
     return (
         <QueryClientProvider client={queryClient}>
             {children}
