@@ -9,14 +9,7 @@ type SideBarProps = {
     from: "left" | "right" | "top" | "bottom" | "bottomLeft" | "bottomRight" | "topLeft" | "topRight";
 };
 export default function Drawer(rest: SideBarProps) {
-    const {
-        children,
-        isDrawerOpen,
-        setIsDrawerOpen,
-        className,
-        from, 
-        ...props
-    } = rest;
+    const {children,isDrawerOpen,setIsDrawerOpen,className,from, ...props} = rest;
     const drawerVariants = cva(
         "z-50 fixed transition bg-background text-foreground border border-neutral-50/20", 
         {
@@ -69,11 +62,13 @@ export default function Drawer(rest: SideBarProps) {
             >
                 {children}
             </div>
-            {/* {isDrawerOpen? */}
-            <div  className={`${isDrawerOpen ? "bg-neutral-950/80 " : "collapse"} transition-colors duration-200 ease-out fixed inset-0  z-40`} onClick={() => setIsDrawerOpen(false)}></div>
-            {/* :""} */}
+            <div
+                className={`
+                ${isDrawerOpen ? "bg-neutral-950/80 " : "collapse"} 
+                transition-colors duration-200 ease-out fixed inset-0  z-40
+                `}
+                onClick={() => setIsDrawerOpen(false)}
+            ></div>
         </>
     );
 }
-
-

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Tab({ tab, activeTab, setActiveTab }: any) {
     const { title, id } = tab;
@@ -9,7 +9,7 @@ function Tab({ tab, activeTab, setActiveTab }: any) {
                 className={` ${
                     activeTab === id
                         ? "bg-primary text-primary-foreground"
-                        : " text-primary hover:bg-muted focus-visible:bg-muted"
+                        : " text-primary hover:bg-primary-foreground focus-visible:bg-primary-foreground"
                 } focus-outline w-full pb-1 pt-2 h-6 sm:h-8 sm:text-sm text-xs rounded-sm sm:rounded-md cursor-pointer font-medium uppercase flex items-center justify-center
             
             `}
@@ -29,7 +29,7 @@ export default function Tabs({ tabData }: TabPropsType) {
     const [activeTab, setActiveTab] = useState(0);
     return (
         <>
-            <ul className="max-w-8xl w-full mx-auto shadow-md g-primary-foreground/50 p-2 grid gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
+            <ul className="max-w-8xl w-full mx-auto shadow-md shadow-primary/10 py-2 container grid gap-2 sm:grid-cols-[repeat(auto-fill,minmax(120px,1fr))]">
                 {tabData.map((tab: { title: string }, i: number) => (
                     <Tab
                         key={i}
