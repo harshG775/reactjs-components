@@ -23,9 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             >
                 <Providers>
                     {children}
-                    <div className="fixed bottom-4 right-4">
-                        <ModeToggle />
-                    </div>
+                    <ModeToggle className="fixed bottom-4 right-4" />
                 </Providers>
             </body>
         </html>
