@@ -1,9 +1,14 @@
 {
-    "extends": ["next/core-web-vitals", "next/babel"],
+    "extends": ["next/core-web-vitals"],
     "rules": {
         "no-unused-vars": [
             "warn",
-            { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+            { 
+                "vars": "all",
+                "args": "after-used",
+                "caughtErrors": "all",
+                "ignoreRestSiblings": false
+            }
         ]
     }
 }
